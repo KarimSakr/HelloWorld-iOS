@@ -6,8 +6,10 @@ import SwiftUI
 
 struct ContentView: View {
  var body: some View {
- Button("Click Me", action: {
-  print("Hello World")
+TabView.tabViewStyle(PageTabViewStyle(backgroundDisplayMode: .always)) {
+ Text("Welcome")
+ Text("Exercise 1")
+ Text("Exercise 2")
   }
  }
 }
