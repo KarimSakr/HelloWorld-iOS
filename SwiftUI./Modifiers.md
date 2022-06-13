@@ -5,14 +5,14 @@ SwiftUI has an enormous number of methods you can use to modify the appearance o
 ## Padding
 SwiftUI lets us set individual padding around views using the `padding()` modifier, causing views to be placed further away from their neighbors.
 Example:
-```sh
+```swift
 Text("Hello World!).padding()
 ```
 
 ## VStack and HStack
 `VStack` lets you arrange the element vertically, and `HStack` horizontally
 
-```sh
+```swift
 VStack {
  Text("Welcome")
  Text("Welcome")
@@ -22,7 +22,7 @@ VStack {
 
    Welcome
    
-   ```sh
+   ```swift
 HStack {
  Text("Welcome")
  Text("Welcome")
