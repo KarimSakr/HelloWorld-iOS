@@ -8,7 +8,7 @@
 - [Absolute Value](#Absolute-Value)
 
 # Initialize
-```sh
+```swift
 //Here you can initialize components
 override func viewDidLoad() {
  super.viewDidLoad()
@@ -22,7 +22,7 @@ override func viewDidLoad() {
 > try initializing it at the start with `@IBOutlet var slider: UISlider!`
 
 The code will be the following
-```sh
+```swift
 @IBOutlet var slider: UISlider!
 var currentValue = ANYTHING
 override func viewDidLoad() {
@@ -35,14 +35,14 @@ override func viewDidLoad() {
 > If you are lost, go to page 92 in the book: UIKit Apprentice (Second edition)
 
 # Random Number Generation
-```sh
+```swift
 var targetValue = Int.random(in: 1...100)
 //Generate a random number between 1 and 100 inclusive
 ```
 
 # Labels
 If you want to change or edit a label, you can do it by typing
-```sh
+```swift
 func updateLabels() {
  targetLabel.text = String(targetValue)
 }
@@ -51,7 +51,7 @@ Labels only accept String, so you will have to convert: AnyData -> String
 Label expect a string so do not forget the `String()`
 
 # IBOutlet
-```sh
+```swift
 IBOutlet var slider: UISlider!
 ```
 In the case of `@IBOutlet`, this is a connection from an Interface Builder user interface component – e.g. a UIButton – to a property in a view controller or other piece of Swift code.
