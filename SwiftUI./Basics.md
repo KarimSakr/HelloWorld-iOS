@@ -31,11 +31,19 @@ You van blur views
 > `.resizable()` make the image takes it original dimensions.
 > `.aspectRatio(contentMode: .fit)` make the image fit in the ContentView
 > `.ignoreSafeArea()` ignore safe area of the phone.
+> `.frame(width: 120, height: 118)` to set the width and the height
+> `.cornerRadius(20)` to round image corners
+
    
 
 ## VStack and HStack And ZStack
-`VStack` lets you arrange the element vertically, `HStack` horizontally and `ZStack` on top of each other on the Z axis
-
+`VStack` lets you arrange the element vertically, `HStack` horizontally and `ZStack` on top of each other on the Z axis.
+In the parameters, you can add the alignmrnts too.
+Example:
+```swift
+VStack(alignment: .leading){
+}
+```
 ### Vstack
 ```swift
 VStack {
@@ -125,3 +133,13 @@ Button(action: {
 }
 ```
 > To be able to change the data of a variable in a view, assign to it `@State` so it would be mutable.
+
+# List
+```swift
+List{
+  foreach(arrayName.indices, id: \.self{ index in
+  //code here
+  }
+}
+```
+> Add `listRowSeparator(.hidden) to hide the row seperators
