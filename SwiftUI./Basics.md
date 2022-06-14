@@ -16,7 +16,7 @@ Text("Hello World!).padding()
   .background(Color.blue.blur(radius: 3.0))
 ```
 
-You van blur views
+You can blur views
 
 ## Images
 
@@ -142,4 +142,4 @@ List{
   }
 }
 ```
-> Add `listRowSeparator(.hidden) to hide the row seperators
+> Add `.listRowSeparator(.hidden)` to hide the row seperators
